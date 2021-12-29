@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import RandGame from './RandGame';
+import RollDice from './RollDice';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <RandGame />
+        <RollDice />
       </div>
     );
   }
