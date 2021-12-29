@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Rando from './Rando';
+import RandGame from './RandGame';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Rando maxNum={7} />
+        <RandGame />
       </div>
     );
   }

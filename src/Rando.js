@@ -6,7 +6,6 @@ class Rando extends Component {
     this.state = {
       num: 0,
     };
-    this.makeTimer();
   }
 
   makeTimer() {
