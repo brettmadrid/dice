@@ -1,4 +1,5 @@
 import React from 'react';
+import './Dice.css';
 
 const Dice = ({ val }) => {
   switch (val) {

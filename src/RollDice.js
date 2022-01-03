@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Dice from './Dice';
+import './RollDice.css';
 
 class RollDice extends Component {
   constructor(props) {
@@ -34,10 +35,14 @@ class RollDice extends Component {
 
   render() {
     return (
-      <div>
-        <Dice val={this.state.Die1} />
-        <Dice val={this.state.Die2} />
-        <button onClick={() => this.rollHandler()}>
+      <div className='RollDice'>
+        <div className='RollDice-Dice-container'>
+          <Dice val={this.state.Die1} />
+          <Dice val={this.state.Die2} />
+        </div>
+        <button
+          onClick={() => this.rollHandler()}
+          disabled={this.state.isRolling}>
           {this.state.isRolling ? 'Rolling...' : 'Roll Dice'}
         </button>
       </div>
