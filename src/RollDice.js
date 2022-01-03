@@ -36,9 +36,9 @@ class RollDice extends Component {
   render() {
     return (
       <div className='RollDice'>
-        <div className='RollDice-Dice-container'>
-          <Dice val={this.state.Die1} />
-          <Dice val={this.state.Die2} />
+        <div className='RollDice-container'>
+          <Dice val={this.state.Die1} rolling={this.state.isRolling} />
+          <Dice val={this.state.Die2} rolling={this.state.isRolling} />
         </div>
         <button
           onClick={() => this.rollHandler()}
